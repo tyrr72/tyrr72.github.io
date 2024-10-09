@@ -3,299 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio">
-    <meta name="keywords" content="portfolio, web developer, designer">
-    <meta name="author" content="Ty">
-    <title>Portfolio - Ty</title>
-    <style>
-        /* Reset default browser styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-
-        /* Navigation bar */
-        header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #f4b41a;
-        }
-
-        /* Hero section */
-        #hero {
-            height: 100vh;
-            background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-content {
-            text-align: center;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 40px;
-            border-radius: 10px;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            padding: 10px 30px;
-            font-size: 1.2rem;
-            background-color: #f4b41a;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #e19c17;
-        }
-
-        /* Sections styling */
-        section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: #333;
-        }
-
-        /* About section */
-        #about {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-        }
-
-        #about img {
-            width: 40%;
-            border-radius: 10px;
-        }
-
-        #about .bio {
-            flex: 1;
-        }
-
-        #about .bio p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        /* Projects section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .project-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .project-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .project-card h3 {
-            margin: 15px 0;
-            color: #333;
-        }
-
-        /* Skills section */
-        .skills-list {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .skill {
-            background-color: #f4b41a;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 20%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .skill:hover {
-            transform: translateY(-10px);
-        }
-
-        .skill i {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        /* Contact section */
-        .contact-info {
-            text-align: center;
-        }
-
-        .contact-info p {
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-
-        .contact-info a {
-            color: #f4b41a;
-            font-size: 1.1rem;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <nav>
-            <div class="logo">Ty</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>About Us</h1>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm Ty</h1>
-            <p>Game Developer | Game Modder | Web Developer</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
+    <main>
+        <section class="intro">
+            <h2>Welcome to Our Website</h2>
+            <p>This is a brief introduction to our website. We offer various services and information about our work.</p>
+        </section>
+    </main>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div>
-            <div class="bio">
-                <p>Hi, I'm Ty, a passionate game developer with experience in modding games. I love to work with modern technologies to build efficient and user-friendly applications.</p>
-                <p>My journey in development started with curiosity, and now I turn ideas into reality.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="file://imgur.com/a/KVGOTlV" alt="Gorilla Tag Mods">
-                <h3>Gorilla Tag Mods</h3>
-                <p>Making mods for Gorilla Tag is one of my many passions.</p>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Unity">
-                <h3>Game Creation</h3>
-                <p>I love making games for unity as its challenging and fun!</p>
-            </div>
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>A short description of your project goes here.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill">
-                <i class="fas fa-code"></i>
-                <h3>Game Modding</h3>
-            </div>
-            <div class="skill">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Game Creation</h3>
-            </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <h3>Web Developement</h3>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:razergaming531@gmail.com">razergaming531@gmail.com</a></p>
-            <p>Youtube: <a href="https://www.youtube.com/@Tyre36">Tyre36</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Ty. All rights reserved.</p>
-    </footer>
-
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-link">
+            <span>Home</span>
+        </a>
+        <a href="login.html" class="nav-link">
+            <span>Login</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span>Sign Up</span>
+        </a>
+    </nav>
 </body>
 </html>
