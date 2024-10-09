@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login Style.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <main>
+        <section class="login-form">
+            <h2>Welcome Back!</h2>
+            <p>Please log in using your credentials.</p>
+            <form id="loginForm" onsubmit="return handleLogin(event)">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p id="message" class="message"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-link"><span>Home</span></a>
+        <a href="#" class="nav-link"><span>Login</span></a>
+        <a href="signup.html" class="nav-link"><span>Sign Up</span></a>
+    </nav>
+
+    <script>
+        // Simulated user data
+        const validCredentials = [
+            { username: "Ty", password: "Sigma54" },
+            { username: "Striker", password: "IsNotSigma" },
+            // { username: "guest", password: "guest123" }
+        ];
+
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const messageElement = document.getElementById("message");
+
+            // Validate credentials
+            const user = validCredentials.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                // Redirect to dashboard page
+                window.location.href = "dashboard.html"; 
+            } else {
+                messageElement.textContent = "Invalid username or password.";
+                messageElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

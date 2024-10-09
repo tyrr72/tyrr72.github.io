@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Dashboard Content Section */
+.dashboard-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.dashboard-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dashboard-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Webhook Sender Section */
+.webhook-sender {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.webhook-sender h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.webhook-sender label {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.webhook-sender textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.webhook-sender button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.webhook-sender button:hover {
+    background-color: #e03e4e;
+}
+
+.response-message {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-nav .nav-link {
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.bottom-nav .nav-link span {
+    display: block;
+    padding: 10px;
+}
+
+.bottom-nav .nav-link:hover {
+    background-color: #ff4b5c;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .dashboard-content, .webhook-sender {
+        padding: 20px;
+    }
+
+    .dashboard-content h2, .webhook-sender h2 {
+        font-size: 1.5em;
+    }
+
+    .dashboard-content p, .webhook-sender label {
+        font-size: 1em;
+    }
+
+    .dashboard-content button, .webhook-sender button {
+        font-size: 1em;
+    }
+}
